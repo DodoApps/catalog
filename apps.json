@@ -271,6 +271,47 @@
         "archived": false,
         "fetchedAt": "2026-01-31T04:30:00Z"
       }
+    },
+    {
+      "id": "dodopass",
+      "name": "DodoPass",
+      "publisherId": "dodoapps",
+      "tagline": "Native macOS password manager",
+      "description": "A native macOS password manager built with SwiftUI, featuring local AES-256-GCM encryption with optional iCloud sync. Touch ID unlock, auto-lock, and smart clipboard.",
+      "category": "security",
+      "featured": true,
+      "icon": "https://raw.githubusercontent.com/DodoApps/dodopass/main/icon.png",
+      "screenshots": [],
+      "version": "1.0.0",
+      "minMacOS": "14.0",
+      "downloadUrl": "https://github.com/DodoApps/dodopass/releases/download/v1.0.0/DodoPass-1.0.0.dmg",
+      "downloadSize": 4308534,
+      "releaseDate": "2026-01-31T05:32:58Z",
+      "bundleId": "com.dodoapps.dodopass",
+      "features": [
+        "AES-256-GCM encryption",
+        "Touch ID unlock",
+        "Optional iCloud sync",
+        "Auto-lock on inactivity"
+      ],
+      "verification": {
+        "openSource": true,
+        "repoUrl": "https://github.com/DodoApps/dodopass",
+        "license": "MIT",
+        "notarized": false,
+        "codeReviewed": true,
+        "sandboxed": false,
+        "noAnalytics": true,
+        "repoCreatedAt": "2026-01-31",
+        "verifiedAt": "2026-01-31"
+      },
+      "repoStats": {
+        "lastCommitAt": "2026-01-31T05:32:58Z",
+        "openIssues": 0,
+        "stars": 0,
+        "archived": false,
+        "fetchedAt": "2026-01-31T05:35:00Z"
+      }
     }
   ]
 }
