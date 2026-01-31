@@ -1,13 +1,32 @@
 {
-  "schemaVersion": "1.0",
-  "lastUpdated": "2026-01-31T04:00:00Z",
+  "schemaVersion": "1.1",
+  "lastUpdated": "2026-01-31T04:30:00Z",
+
+  "publishers": [
+    {
+      "id": "dodoapps",
+      "name": "DodoApps",
+      "description": "Beautiful native macOS utilities",
+      "website": null,
+      "github": "https://github.com/DodoApps",
+      "icon": "https://avatars.githubusercontent.com/u/198424587",
+      "email": null,
+      "sponsorUrl": null,
+      "verified": true,
+      "verifiedAt": "2026-01-31",
+      "joinedAt": "2026-01-31"
+    }
+  ],
+
   "apps": [
     {
       "id": "dodoshot",
       "name": "DodoShot",
+      "publisherId": "dodoapps",
       "tagline": "A beautiful screenshot tool for macOS",
       "description": "Lightweight native macOS screenshot application with capture, annotation, and management capabilities. Inspired by CleanShot X, entirely free and open source.",
       "category": "productivity",
+      "featured": true,
       "icon": "https://raw.githubusercontent.com/DodoApps/dodoshot/main/icon.png",
       "screenshots": [
         "https://github.com/user-attachments/assets/a24b9914-0aab-4a03-993a-144069790290"
@@ -17,21 +36,40 @@
       "downloadUrl": "https://github.com/DodoApps/dodoshot/releases/download/v1.2.9/DodoShot-1.2.9.dmg",
       "downloadSize": 4072828,
       "releaseDate": "2026-01-30T11:58:53Z",
-      "repoUrl": "https://github.com/DodoApps/dodoshot",
       "bundleId": "com.dodoapps.dodoshot",
       "features": [
         "Area, window, fullscreen capture",
         "Annotation tools with shapes and text",
         "OCR text extraction",
         "Floating screenshots"
-      ]
+      ],
+      "verification": {
+        "openSource": true,
+        "repoUrl": "https://github.com/DodoApps/dodoshot",
+        "license": "MIT",
+        "notarized": false,
+        "codeReviewed": true,
+        "sandboxed": false,
+        "noAnalytics": true,
+        "repoCreatedAt": "2026-01-29",
+        "verifiedAt": "2026-01-31"
+      },
+      "repoStats": {
+        "lastCommitAt": "2026-01-30T11:58:53Z",
+        "openIssues": 1,
+        "stars": 13,
+        "archived": false,
+        "fetchedAt": "2026-01-31T04:30:00Z"
+      }
     },
     {
       "id": "dodoclip",
       "name": "DodoClip",
+      "publisherId": "dodoapps",
       "tagline": "A free clipboard manager for macOS",
       "description": "A lightweight, native clipboard manager that automatically saves everything you copy and provides instant access to your clipboard history.",
       "category": "productivity",
+      "featured": true,
       "icon": "https://raw.githubusercontent.com/DodoApps/dodoclip/main/icon.png",
       "screenshots": [
         "https://github.com/user-attachments/assets/f281b654-a0a2-4883-b09c-21aa2cd3efb4"
@@ -41,21 +79,40 @@
       "downloadUrl": "https://github.com/DodoApps/dodoclip/releases/download/v1.2.2/DodoClip-1.2.2.dmg",
       "downloadSize": 4596254,
       "releaseDate": "2026-01-29T06:27:37Z",
-      "repoUrl": "https://github.com/DodoApps/dodoclip",
       "bundleId": "com.dodoapps.dodoclip",
       "features": [
         "Clipboard history with search",
         "OCR for images",
         "Paste stack for sequential pasting",
         "Privacy controls"
-      ]
+      ],
+      "verification": {
+        "openSource": true,
+        "repoUrl": "https://github.com/DodoApps/dodoclip",
+        "license": "MIT",
+        "notarized": false,
+        "codeReviewed": true,
+        "sandboxed": false,
+        "noAnalytics": true,
+        "repoCreatedAt": "2026-01-28",
+        "verifiedAt": "2026-01-31"
+      },
+      "repoStats": {
+        "lastCommitAt": "2026-01-29T22:57:54Z",
+        "openIssues": 7,
+        "stars": 47,
+        "archived": false,
+        "fetchedAt": "2026-01-31T04:30:00Z"
+      }
     },
     {
       "id": "dodopulse",
       "name": "DodoPulse",
+      "publisherId": "dodoapps",
       "tagline": "Real-time system monitoring in your menu bar",
       "description": "A lightweight, native macOS menu bar app that displays real-time system metrics with beautiful mini graphs. Monitor CPU, memory, GPU, network, and more.",
       "category": "utilities",
+      "featured": true,
       "icon": "https://raw.githubusercontent.com/DodoApps/dodopulse/main/icon.png",
       "screenshots": [
         "https://github.com/user-attachments/assets/6868a0ac-1d01-45aa-84d7-8d21dc0daa6b"
@@ -65,21 +122,40 @@
       "downloadUrl": "https://github.com/DodoApps/dodopulse/releases/download/v1.1.0/DodoPulse-1.1.0.dmg",
       "downloadSize": 1788784,
       "releaseDate": "2026-01-27T15:53:21Z",
-      "repoUrl": "https://github.com/DodoApps/dodopulse",
       "bundleId": "com.dodoapps.dodopulse",
       "features": [
         "CPU, memory, GPU monitoring",
         "Network speed tracking",
         "Battery and fan status",
         "Beautiful mini graphs"
-      ]
+      ],
+      "verification": {
+        "openSource": true,
+        "repoUrl": "https://github.com/DodoApps/dodopulse",
+        "license": "MIT",
+        "notarized": false,
+        "codeReviewed": true,
+        "sandboxed": false,
+        "noAnalytics": true,
+        "repoCreatedAt": "2026-01-25",
+        "verifiedAt": "2026-01-31"
+      },
+      "repoStats": {
+        "lastCommitAt": "2026-01-31T03:51:54Z",
+        "openIssues": 1,
+        "stars": 101,
+        "archived": false,
+        "fetchedAt": "2026-01-31T04:30:00Z"
+      }
     },
     {
       "id": "dodotidy",
       "name": "DodoTidy",
+      "publisherId": "dodoapps",
       "tagline": "A native macOS system cleaner",
       "description": "A native macOS application for system monitoring, disk analysis, and cleanup. Remove caches, logs, and temporary files with multiple safety mechanisms.",
       "category": "utilities",
+      "featured": false,
       "icon": "https://raw.githubusercontent.com/DodoApps/dodotidy/main/dodotidy.png",
       "screenshots": [],
       "version": "1.0.5",
@@ -87,21 +163,40 @@
       "downloadUrl": "https://github.com/DodoApps/dodotidy/releases/download/v1.0.5/DodoTidy-1.0.5.dmg",
       "downloadSize": 20457824,
       "releaseDate": "2026-01-29T15:53:53Z",
-      "repoUrl": "https://github.com/DodoApps/dodotidy",
       "bundleId": "com.dodoapps.dodotidy",
       "features": [
         "Cache and log cleanup",
         "Disk space visualization",
         "System optimization",
         "Safe trash-based deletion"
-      ]
+      ],
+      "verification": {
+        "openSource": true,
+        "repoUrl": "https://github.com/DodoApps/dodotidy",
+        "license": "MIT",
+        "notarized": false,
+        "codeReviewed": true,
+        "sandboxed": false,
+        "noAnalytics": true,
+        "repoCreatedAt": "2026-01-26",
+        "verifiedAt": "2026-01-31"
+      },
+      "repoStats": {
+        "lastCommitAt": "2026-01-31T03:55:50Z",
+        "openIssues": 8,
+        "stars": 71,
+        "archived": false,
+        "fetchedAt": "2026-01-31T04:30:00Z"
+      }
     },
     {
       "id": "dodocount",
       "name": "DodoCount",
+      "publisherId": "dodoapps",
       "tagline": "Google Analytics in your menu bar",
       "description": "A beautiful macOS menubar app for Google Analytics 4 and Search Console. Quick access to visitor data and search metrics.",
       "category": "analytics",
+      "featured": false,
       "icon": "https://raw.githubusercontent.com/DodoApps/dodocount/main/dodocount.png",
       "screenshots": [],
       "version": "1.1.0",
@@ -109,21 +204,40 @@
       "downloadUrl": "https://github.com/DodoApps/dodocount/releases/download/v1.1.0/DodoCount-1.1.0.dmg",
       "downloadSize": 1404643,
       "releaseDate": "2026-01-31T01:10:46Z",
-      "repoUrl": "https://github.com/DodoApps/dodocount",
       "bundleId": "com.dodoapps.dodocount",
       "features": [
         "Real-time visitor tracking",
         "Search Console integration",
         "Today vs yesterday comparison",
         "Multiple property support"
-      ]
+      ],
+      "verification": {
+        "openSource": true,
+        "repoUrl": "https://github.com/DodoApps/dodocount",
+        "license": "MIT",
+        "notarized": false,
+        "codeReviewed": true,
+        "sandboxed": false,
+        "noAnalytics": true,
+        "repoCreatedAt": "2026-01-30",
+        "verifiedAt": "2026-01-31"
+      },
+      "repoStats": {
+        "lastCommitAt": "2026-01-31T03:24:59Z",
+        "openIssues": 0,
+        "stars": 0,
+        "archived": false,
+        "fetchedAt": "2026-01-31T04:30:00Z"
+      }
     },
     {
       "id": "dodonest",
       "name": "DodoNest",
+      "publisherId": "dodoapps",
       "tagline": "Organize your menu bar items",
       "description": "A native macOS application for organizing and rearranging your menu bar items through drag-and-drop functionality and search.",
       "category": "utilities",
+      "featured": false,
       "icon": "https://raw.githubusercontent.com/DodoApps/dodonest/main/assets/icon.png",
       "screenshots": [
         "https://raw.githubusercontent.com/DodoApps/dodonest/main/assets/screenshot.png"
@@ -133,14 +247,31 @@
       "downloadUrl": "https://github.com/DodoApps/dodonest/releases/download/v1.1.0/DodoNest-1.1.0.dmg",
       "downloadSize": 3980641,
       "releaseDate": "2026-01-28T20:36:37Z",
-      "repoUrl": "https://github.com/DodoApps/dodonest",
       "bundleId": "com.dodoapps.dodonest",
       "features": [
         "Visual menu bar layout",
         "Drag-and-drop reordering",
         "Search functionality",
         "Real-time sync"
-      ]
+      ],
+      "verification": {
+        "openSource": true,
+        "repoUrl": "https://github.com/DodoApps/dodonest",
+        "license": "MIT",
+        "notarized": false,
+        "codeReviewed": true,
+        "sandboxed": false,
+        "noAnalytics": true,
+        "repoCreatedAt": "2026-01-28",
+        "verifiedAt": "2026-01-31"
+      },
+      "repoStats": {
+        "lastCommitAt": "2026-01-31T03:56:00Z",
+        "openIssues": 0,
+        "stars": 2,
+        "archived": false,
+        "fetchedAt": "2026-01-31T04:30:00Z"
+      }
     }
   ]
 }
