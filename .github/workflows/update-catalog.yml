@@ -1,0 +1,91 @@
+name: Update Catalog
+
+on:
+  repository_dispatch:
+    types: [app_released]
+  workflow_dispatch:
+    inputs:
+      app_id:
+        description: 'App ID to update (leave empty for all)'
+        required: false
+        type: string
+
+jobs:
+  update:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Update catalog
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: |
+          # Apps to check (hardcoded list - no user input)
+          APPS="dodoshot dodoclip dodopulse dodotidy dodocount dodonest"
+
+          # Create temporary file
+          cp apps.json apps.json.bak
+
+          for app in $APPS; do
+            echo "Checking $app..."
+
+            # Get latest release info
+            RELEASE=$(gh api repos/DodoApps/$app/releases/latest 2>/dev/null || echo "")
+
+            if [ -z "$RELEASE" ]; then
+              echo "No release found for $app, skipping"
+              continue
+            fi
+
+            VERSION=$(echo "$RELEASE" | jq -r '.tag_name' | sed 's/^v//')
+            PUBLISHED=$(echo "$RELEASE" | jq -r '.published_at')
+
+            # Get first DMG asset
+            ASSET=$(echo "$RELEASE" | jq -r '.assets[] | select(.name | endswith(".dmg")) | {url: .browser_download_url, size: .size} | @base64' | head -1)
+
+            if [ -z "$ASSET" ]; then
+              echo "No DMG found for $app, skipping"
+              continue
+            fi
+
+            DOWNLOAD_URL=$(echo "$ASSET" | base64 -d | jq -r '.url')
+            DOWNLOAD_SIZE=$(echo "$ASSET" | base64 -d | jq -r '.size')
+
+            echo "  Version: $VERSION"
+            echo "  URL: $DOWNLOAD_URL"
+            echo "  Size: $DOWNLOAD_SIZE"
+
+            # Update apps.json using jq
+            jq --arg id "$app" \
+               --arg version "$VERSION" \
+               --arg url "$DOWNLOAD_URL" \
+               --argjson size "$DOWNLOAD_SIZE" \
+               --arg date "$PUBLISHED" \
+               '(.apps[] | select(.id == $id)) |= . + {
+                 version: $version,
+                 downloadUrl: $url,
+                 downloadSize: $size,
+                 releaseDate: $date
+               }' apps.json > apps.json.tmp && mv apps.json.tmp apps.json
+          done
+
+          # Update lastUpdated timestamp
+          jq --arg now "$(date -u +%Y-%m-%dT%H:%M:%SZ)" '.lastUpdated = $now' apps.json > apps.json.tmp && mv apps.json.tmp apps.json
+
+      - name: Check for changes
+        id: diff
+        run: |
+          if git diff --quiet apps.json; then
+            echo "changed=false" >> $GITHUB_OUTPUT
+          else
+            echo "changed=true" >> $GITHUB_OUTPUT
+          fi
+
+      - name: Commit and push
+        if: steps.diff.outputs.changed == 'true'
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git add apps.json
+          git commit -m "Update catalog $(date -u +%Y-%m-%d)"
+          git push

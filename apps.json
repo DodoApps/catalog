@@ -1,0 +1,146 @@
+{
+  "schemaVersion": "1.0",
+  "lastUpdated": "2026-01-31T04:00:00Z",
+  "apps": [
+    {
+      "id": "dodoshot",
+      "name": "DodoShot",
+      "tagline": "A beautiful screenshot tool for macOS",
+      "description": "Lightweight native macOS screenshot application with capture, annotation, and management capabilities. Inspired by CleanShot X, entirely free and open source.",
+      "category": "productivity",
+      "icon": "https://raw.githubusercontent.com/DodoApps/dodoshot/main/icon.png",
+      "screenshots": [
+        "https://github.com/user-attachments/assets/a24b9914-0aab-4a03-993a-144069790290"
+      ],
+      "version": "1.2.9",
+      "minMacOS": "14.0",
+      "downloadUrl": "https://github.com/DodoApps/dodoshot/releases/download/v1.2.9/DodoShot-1.2.9.dmg",
+      "downloadSize": 4072828,
+      "releaseDate": "2026-01-30T11:58:53Z",
+      "repoUrl": "https://github.com/DodoApps/dodoshot",
+      "bundleId": "com.dodoapps.dodoshot",
+      "features": [
+        "Area, window, fullscreen capture",
+        "Annotation tools with shapes and text",
+        "OCR text extraction",
+        "Floating screenshots"
+      ]
+    },
+    {
+      "id": "dodoclip",
+      "name": "DodoClip",
+      "tagline": "A free clipboard manager for macOS",
+      "description": "A lightweight, native clipboard manager that automatically saves everything you copy and provides instant access to your clipboard history.",
+      "category": "productivity",
+      "icon": "https://raw.githubusercontent.com/DodoApps/dodoclip/main/icon.png",
+      "screenshots": [
+        "https://github.com/user-attachments/assets/f281b654-a0a2-4883-b09c-21aa2cd3efb4"
+      ],
+      "version": "1.2.2",
+      "minMacOS": "14.0",
+      "downloadUrl": "https://github.com/DodoApps/dodoclip/releases/download/v1.2.2/DodoClip-1.2.2.dmg",
+      "downloadSize": 4596254,
+      "releaseDate": "2026-01-29T06:27:37Z",
+      "repoUrl": "https://github.com/DodoApps/dodoclip",
+      "bundleId": "com.dodoapps.dodoclip",
+      "features": [
+        "Clipboard history with search",
+        "OCR for images",
+        "Paste stack for sequential pasting",
+        "Privacy controls"
+      ]
+    },
+    {
+      "id": "dodopulse",
+      "name": "DodoPulse",
+      "tagline": "Real-time system monitoring in your menu bar",
+      "description": "A lightweight, native macOS menu bar app that displays real-time system metrics with beautiful mini graphs. Monitor CPU, memory, GPU, network, and more.",
+      "category": "utilities",
+      "icon": "https://raw.githubusercontent.com/DodoApps/dodopulse/main/icon.png",
+      "screenshots": [
+        "https://github.com/user-attachments/assets/6868a0ac-1d01-45aa-84d7-8d21dc0daa6b"
+      ],
+      "version": "1.1.0",
+      "minMacOS": "12.0",
+      "downloadUrl": "https://github.com/DodoApps/dodopulse/releases/download/v1.1.0/DodoPulse-1.1.0.dmg",
+      "downloadSize": 1788784,
+      "releaseDate": "2026-01-27T15:53:21Z",
+      "repoUrl": "https://github.com/DodoApps/dodopulse",
+      "bundleId": "com.dodoapps.dodopulse",
+      "features": [
+        "CPU, memory, GPU monitoring",
+        "Network speed tracking",
+        "Battery and fan status",
+        "Beautiful mini graphs"
+      ]
+    },
+    {
+      "id": "dodotidy",
+      "name": "DodoTidy",
+      "tagline": "A native macOS system cleaner",
+      "description": "A native macOS application for system monitoring, disk analysis, and cleanup. Remove caches, logs, and temporary files with multiple safety mechanisms.",
+      "category": "utilities",
+      "icon": "https://raw.githubusercontent.com/DodoApps/dodotidy/main/dodotidy.png",
+      "screenshots": [],
+      "version": "1.0.5",
+      "minMacOS": "14.0",
+      "downloadUrl": "https://github.com/DodoApps/dodotidy/releases/download/v1.0.5/DodoTidy-1.0.5.dmg",
+      "downloadSize": 20457824,
+      "releaseDate": "2026-01-29T15:53:53Z",
+      "repoUrl": "https://github.com/DodoApps/dodotidy",
+      "bundleId": "com.dodoapps.dodotidy",
+      "features": [
+        "Cache and log cleanup",
+        "Disk space visualization",
+        "System optimization",
+        "Safe trash-based deletion"
+      ]
+    },
+    {
+      "id": "dodocount",
+      "name": "DodoCount",
+      "tagline": "Google Analytics in your menu bar",
+      "description": "A beautiful macOS menubar app for Google Analytics 4 and Search Console. Quick access to visitor data and search metrics.",
+      "category": "analytics",
+      "icon": "https://raw.githubusercontent.com/DodoApps/dodocount/main/dodocount.png",
+      "screenshots": [],
+      "version": "1.1.0",
+      "minMacOS": "14.0",
+      "downloadUrl": "https://github.com/DodoApps/dodocount/releases/download/v1.1.0/DodoCount-1.1.0.dmg",
+      "downloadSize": 1404643,
+      "releaseDate": "2026-01-31T01:10:46Z",
+      "repoUrl": "https://github.com/DodoApps/dodocount",
+      "bundleId": "com.dodoapps.dodocount",
+      "features": [
+        "Real-time visitor tracking",
+        "Search Console integration",
+        "Today vs yesterday comparison",
+        "Multiple property support"
+      ]
+    },
+    {
+      "id": "dodonest",
+      "name": "DodoNest",
+      "tagline": "Organize your menu bar items",
+      "description": "A native macOS application for organizing and rearranging your menu bar items through drag-and-drop functionality and search.",
+      "category": "utilities",
+      "icon": "https://raw.githubusercontent.com/DodoApps/dodonest/main/assets/icon.png",
+      "screenshots": [
+        "https://raw.githubusercontent.com/DodoApps/dodonest/main/assets/screenshot.png"
+      ],
+      "version": "1.1.0",
+      "minMacOS": "14.0",
+      "downloadUrl": "https://github.com/DodoApps/dodonest/releases/download/v1.1.0/DodoNest-1.1.0.dmg",
+      "downloadSize": 3980641,
+      "releaseDate": "2026-01-28T20:36:37Z",
+      "repoUrl": "https://github.com/DodoApps/dodonest",
+      "bundleId": "com.dodoapps.dodonest",
+      "features": [
+        "Visual menu bar layout",
+        "Drag-and-drop reordering",
+        "Search functionality",
+        "Real-time sync"
+      ]
+    }
+  ]
+}
