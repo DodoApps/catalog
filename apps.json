@@ -112,7 +112,7 @@
       "description": "A lightweight, native macOS menu bar app that displays real-time system metrics with beautiful mini graphs. Monitor CPU, memory, GPU, network, and more.",
       "category": "utilities",
       "featured": true,
-      "icon": "https://raw.githubusercontent.com/DodoApps/dodopulse/main/icon.png",
+      "icon": "https://raw.githubusercontent.com/DodoApps/dodopulse/525b81f/icon.png",
       "screenshots": [
         "https://github.com/user-attachments/assets/6868a0ac-1d01-45aa-84d7-8d21dc0daa6b"
       ],
