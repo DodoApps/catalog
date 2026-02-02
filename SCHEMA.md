@@ -1,12 +1,12 @@
 # Catalog Schema
 
-Version: 1.1
+Version: 1.2
 
 ## Root Object
 
 | Field | Type | Required | Description |
 |-------|------|----------|-------------|
-| `schemaVersion` | string | Yes | Schema version (e.g., "1.1") |
+| `schemaVersion` | string | Yes | Schema version (e.g., "1.2") |
 | `lastUpdated` | ISO8601 | Yes | When the catalog was last updated |
 | `publishers` | Publisher[] | Yes | Array of publisher objects |
 | `apps` | App[] | Yes | Array of app objects |
@@ -42,15 +42,16 @@ Version: 1.1
 | `publisherId` | string | Yes | Reference to publisher.id |
 | `tagline` | string | Yes | One-line description (< 80 chars) |
 | `description` | string | Yes | 2-3 sentence description |
-| `category` | string | Yes | One of: `productivity`, `utilities`, `analytics` |
+| `category` | string | Yes | One of: `productivity`, `utilities`, `analytics`, `security`, `developer`, `media`, `social`, `finance`, `education`, `other` |
 | `featured` | boolean | No | Editor's pick / highlighted app |
+| `paidAlternatives` | string[] | Yes | Array of 1-5 paid apps this replaces |
 
 ### Media
 
 | Field | Type | Required | Description |
 |-------|------|----------|-------------|
-| `icon` | URL | Yes | 512x512 PNG icon URL |
-| `screenshots` | URL[] | Yes | 1-5 screenshot URLs (can be empty array) |
+| `icon` | URL | Yes | 512x512 PNG icon URL (custom designed, not placeholder) |
+| `screenshots` | URL[] | Yes | 2-5 screenshot URLs (minimum 2 required) |
 
 ### Distribution
 
@@ -67,7 +68,7 @@ Version: 1.1
 
 | Field | Type | Required | Description |
 |-------|------|----------|-------------|
-| `features` | string[] | No | 3-6 key features |
+| `features` | string[] | Yes | 3-6 key features (each < 40 chars) |
 | `changelog` | string | No | Latest version changes |
 
 ---
@@ -85,7 +86,7 @@ Nested under each app. Documents verification status.
 | `codeReviewed` | boolean | Yes | Code has been reviewed by DodoHub team |
 | `sandboxed` | boolean | Yes | Uses macOS App Sandbox |
 | `noAnalytics` | boolean | Yes | No tracking or telemetry |
-| `repoCreatedAt` | date | Yes | When the repo was created (1 year rule) |
+| `repoCreatedAt` | date | Yes | When the repo was created |
 | `verifiedAt` | date | Yes | When this app passed verification |
 
 ### Verification Requirements
@@ -93,9 +94,10 @@ Nested under each app. Documents verification status.
 To be listed on DodoHub, apps must meet ALL of the following:
 
 1. **Open source** - Public repository with recognized license
-2. **1 year existence** - Repo must be at least 1 year old
-3. **Code reviewed** - Reviewed by DodoHub team
-4. **Notarized** - Signed and notarized by Apple
+2. **Quality UI/UX** - Professional design meeting our quality standards
+3. **Paid alternative** - Must replace or compete with commercial software
+4. **Code reviewed** - Reviewed by DodoHub team
+5. **Screenshots** - Minimum 2 high-quality screenshots
 
 ---
 
@@ -131,6 +133,46 @@ DodoHub computes maintenance status from `lastCommitAt`:
 | `productivity` | Apps that help users create or manage content |
 | `utilities` | System tools and helpers |
 | `analytics` | Data, metrics, and monitoring apps |
+| `security` | Security, privacy, and protection tools |
+| `developer` | Development tools and utilities |
+| `media` | Video, audio, and image apps |
+| `social` | Communication and social apps |
+| `finance` | Finance and money management |
+| `education` | Learning and educational tools |
+| `other` | Apps that don't fit other categories |
+
+---
+
+## Quality Standards
+
+Apps must meet these quality standards to be listed:
+
+### Design Requirements
+
+| Requirement | Description |
+|-------------|-------------|
+| **Native design** | Follows Apple Human Interface Guidelines |
+| **System appearance** | Proper dark and light mode support |
+| **Professional icon** | Custom app icon (not default Xcode) |
+| **Window management** | Proper resizing and window behavior |
+| **Typography** | Consistent, readable system fonts |
+| **Spacing** | Proper margins, padding, hierarchy |
+| **Error handling** | Graceful error states |
+| **Loading states** | Progress indicators for async ops |
+| **Empty states** | Helpful UI when no content |
+| **Keyboard support** | Standard shortcuts (Cmd+Q, Cmd+W, Cmd+,) |
+
+### Rejection Criteria
+
+Apps will be rejected for:
+
+- Poor or amateur UI/UX design
+- No dark/light mode support
+- Default Xcode icons or placeholders
+- No clear paid alternative
+- Fewer than 2 screenshots
+- Screenshots with placeholder content
+- Inconsistent design throughout
 
 ---
 
@@ -138,7 +180,7 @@ DodoHub computes maintenance status from `lastCommitAt`:
 
 ```json
 {
-  "schemaVersion": "1.1",
+  "schemaVersion": "1.2",
   "lastUpdated": "2026-01-31T04:30:00Z",
 
   "publishers": [
@@ -163,20 +205,26 @@ DodoHub computes maintenance status from `lastCommitAt`:
       "name": "DodoShot",
       "publisherId": "dodoapps",
       "tagline": "A beautiful screenshot tool for macOS",
-      "description": "Lightweight native macOS screenshot application...",
+      "description": "Lightweight native macOS screenshot application with annotation tools and quick sharing.",
       "category": "productivity",
       "featured": true,
+      "paidAlternatives": ["CleanShot X", "Snagit", "Shottr Pro"],
       "icon": "https://raw.githubusercontent.com/DodoApps/dodoshot/main/icon.png",
-      "screenshots": ["https://..."],
+      "screenshots": [
+        "https://raw.githubusercontent.com/DodoApps/dodoshot/main/screenshots/main.png",
+        "https://raw.githubusercontent.com/DodoApps/dodoshot/main/screenshots/annotations.png"
+      ],
       "version": "1.2.9",
       "minMacOS": "14.0",
-      "downloadUrl": "https://github.com/.../DodoShot-1.2.9.dmg",
+      "downloadUrl": "https://github.com/DodoApps/dodoshot/releases/download/v1.2.9/DodoShot-1.2.9.dmg",
       "downloadSize": 4072828,
       "releaseDate": "2026-01-30T11:58:53Z",
       "bundleId": "com.dodoapps.dodoshot",
       "features": [
         "Area, window, fullscreen capture",
-        "Annotation tools"
+        "Annotation tools",
+        "Quick sharing to clipboard",
+        "Keyboard shortcuts"
       ],
       "verification": {
         "openSource": true,

@@ -1,6 +1,6 @@
 {
-  "schemaVersion": "1.1",
-  "lastUpdated": "2026-01-31T04:30:00Z",
+  "schemaVersion": "1.2",
+  "lastUpdated": "2026-02-01T19:00:00Z",
 
   "publishers": [
     {
@@ -26,6 +26,7 @@
       "description": "Lightweight native macOS screenshot application with capture, annotation, and management capabilities. Inspired by CleanShot X, entirely free and open source.",
       "category": "productivity",
       "featured": true,
+      "paidAlternatives": ["CleanShot X", "Snagit", "Shottr Pro"],
       "icon": "https://raw.githubusercontent.com/DodoApps/dodoshot/main/icon.png",
       "screenshots": [
         "https://github.com/user-attachments/assets/a24b9914-0aab-4a03-993a-144069790290"
@@ -69,6 +70,7 @@
       "description": "A lightweight, native clipboard manager that automatically saves everything you copy and provides instant access to your clipboard history.",
       "category": "productivity",
       "featured": true,
+      "paidAlternatives": ["Paste", "Copied", "Alfred Clipboard History"],
       "icon": "https://raw.githubusercontent.com/DodoApps/dodoclip/main/icon.png",
       "screenshots": [
         "https://github.com/user-attachments/assets/f281b654-a0a2-4883-b09c-21aa2cd3efb4"
@@ -112,6 +114,7 @@
       "description": "A lightweight, native macOS menu bar app that displays real-time system metrics with beautiful mini graphs. Monitor CPU, memory, GPU, network, and more.",
       "category": "utilities",
       "featured": true,
+      "paidAlternatives": ["iStat Menus", "Stats Pro", "MenuMeters Pro"],
       "icon": "https://raw.githubusercontent.com/DodoApps/dodopulse/525b81f/icon.png",
       "screenshots": [
         "https://github.com/user-attachments/assets/6868a0ac-1d01-45aa-84d7-8d21dc0daa6b"
@@ -155,6 +158,7 @@
       "description": "A native macOS application for system monitoring, disk analysis, and cleanup. Remove caches, logs, and temporary files with multiple safety mechanisms.",
       "category": "utilities",
       "featured": false,
+      "paidAlternatives": ["CleanMyMac X", "DaisyDisk", "OmniDiskSweeper Pro"],
       "icon": "https://raw.githubusercontent.com/DodoApps/dodotidy/main/dodotidy.png",
       "screenshots": [],
       "version": "1.0.5",
@@ -196,6 +200,7 @@
       "description": "A beautiful macOS menubar app for Google Analytics 4 and Search Console. Quick access to visitor data and search metrics.",
       "category": "analytics",
       "featured": false,
+      "paidAlternatives": ["GAget", "Visitors", "Analytiks"],
       "icon": "https://raw.githubusercontent.com/DodoApps/dodocount/main/dodocount.png",
       "screenshots": [],
       "version": "1.1.0",
@@ -237,6 +242,7 @@
       "description": "A native macOS application for organizing and rearranging your menu bar items through drag-and-drop functionality and search.",
       "category": "utilities",
       "featured": false,
+      "paidAlternatives": ["Bartender", "Hidden Bar Pro", "Vanilla"],
       "icon": "https://raw.githubusercontent.com/DodoApps/dodonest/main/icon.png",
       "screenshots": [
         "https://raw.githubusercontent.com/DodoApps/dodonest/main/assets/screenshot.png"
@@ -280,6 +286,7 @@
       "description": "A native macOS password manager built with SwiftUI, featuring local AES-256-GCM encryption with optional iCloud sync. Touch ID unlock, auto-lock, and smart clipboard.",
       "category": "security",
       "featured": true,
+      "paidAlternatives": ["1Password", "Dashlane", "LastPass Premium"],
       "icon": "https://raw.githubusercontent.com/DodoApps/dodopass/main/icon.png",
       "screenshots": [],
       "version": "1.0.0",
