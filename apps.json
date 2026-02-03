@@ -1,8 +1,20 @@
 {
   "schemaVersion": "1.2",
-  "lastUpdated": "2026-02-01T19:00:00Z",
+  "lastUpdated": "2026-02-03T12:00:00Z",
 
   "publishers": [
+    {
+      "id": "alinuxpengui",
+      "name": "alinuxpengui",
+      "description": "Open-source macOS developer",
+      "website": "https://alinuxpengui.github.io/Macabolic/",
+      "github": "https://github.com/alinuxpengui",
+      "email": "macabolicapp@gmail.com",
+      "sponsorUrl": "https://github.com/sponsors/alinuxpengui",
+      "verified": false,
+      "verifiedAt": null,
+      "joinedAt": "2026-02-03"
+    },
     {
       "id": "dodoapps",
       "name": "DodoApps",
@@ -318,6 +330,55 @@
         "stars": 0,
         "archived": false,
         "fetchedAt": "2026-01-31T05:35:00Z"
+      }
+    },
+    {
+      "id": "macabolic",
+      "name": "Macabolic",
+      "publisherId": "alinuxpengui",
+      "tagline": "A video and audio downloader for macOS",
+      "description": "A beautiful GUI for yt-dlp. Download videos and audio from YouTube and thousands of other supported sites with SponsorBlock, subtitle and playlist support.",
+      "category": "media",
+      "featured": false,
+      "paidAlternatives": ["Downie", "MediaHuman YouTube Downloader", "4K Video Downloader", "Pulltube"],
+      "icon": "https://raw.githubusercontent.com/alinuxpengui/Macabolic/main/Macabolic/Resources/Assets.xcassets/AppIcon.appiconset/icon_512x512.png",
+      "screenshots": [
+        "https://raw.githubusercontent.com/alinuxpengui/Macabolic/refs/heads/main/Screenshots/ss1.png",
+        "https://raw.githubusercontent.com/alinuxpengui/Macabolic/refs/heads/main/Screenshots/ss2.png",
+        "https://raw.githubusercontent.com/alinuxpengui/Macabolic/refs/heads/main/Screenshots/ss3.png",
+        "https://raw.githubusercontent.com/alinuxpengui/Macabolic/refs/heads/main/Screenshots/ss4.png"
+      ],
+      "version": "2.4.1",
+      "minMacOS": "12.0",
+      "downloadUrl": "https://github.com/alinuxpengui/Macabolic/releases/latest/download/Macabolic-v2.4.1.dmg",
+      "downloadSize": 3543129,
+      "releaseDate": "2026-01-24T14:14:00Z",
+      "bundleId": "com.bytemeowster.macabolic",
+      "features": [
+        "YouTube, Twitter/X, Instagram and more",
+        "Supports up to 4K downloads",
+        "SponsorBlock integration",
+        "Subtitle support (embed/external)",
+        "Playlist downloads",
+        "Custom presets"
+      ],
+      "verification": {
+        "openSource": true,
+        "repoUrl": "https://github.com/alinuxpengui/Macabolic",
+        "license": "GPL-3.0",
+        "notarized": false,
+        "codeReviewed": false,
+        "sandboxed": false,
+        "noAnalytics": true,
+        "repoCreatedAt": "2026-01-11",
+        "verifiedAt": null
+      },
+      "repoStats": {
+        "lastCommitAt": "2026-02-03T14:00:00Z",
+        "openIssues": 1,
+        "stars": 79,
+        "archived": false,
+        "fetchedAt": "2026-02-03T12:00:00Z"
       }
     }
   ]
