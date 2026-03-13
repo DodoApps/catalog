@@ -367,7 +367,7 @@
       "category": "utilities",
       "featured": false,
       "paidAlternatives": ["LaunchControl", "Lingon X"],
-      "icon": null,
+      "icon": "",
       "screenshots": [],
       "minMacOS": "14.0",
       "bundleId": "com.dodoservice.app",
