@@ -356,6 +356,45 @@
         "archived": false,
         "fetchedAt": "2026-02-03T12:00:00Z"
       }
+    },
+    {
+      "id": "dodoservice",
+      "name": "DodoService",
+      "publisherId": "dodoapps",
+      "repoSlug": "DodoApps/dodoservice",
+      "tagline": "Manage your Mac services from the menu bar",
+      "description": "A lightweight, native macOS menu bar app for managing Homebrew and Launchd services. Start, stop, restart services with smart categorization, pinning, and auto-refresh.",
+      "category": "utilities",
+      "featured": false,
+      "paidAlternatives": ["LaunchControl", "Lingon X"],
+      "icon": null,
+      "screenshots": [],
+      "minMacOS": "14.0",
+      "bundleId": "com.dodoservice.app",
+      "features": [
+        "Homebrew and Launchd service management",
+        "Smart auto-categorization",
+        "Collapsible accordion sections",
+        "Pin favorite services"
+      ],
+      "verification": {
+        "openSource": true,
+        "repoUrl": "https://github.com/DodoApps/dodoservice",
+        "license": "MIT",
+        "notarized": false,
+        "codeReviewed": true,
+        "sandboxed": false,
+        "noAnalytics": true,
+        "repoCreatedAt": "2026-03-13",
+        "verifiedAt": "2026-03-13"
+      },
+      "repoStats": {
+        "lastCommitAt": "2026-03-13T09:30:00Z",
+        "openIssues": 0,
+        "stars": 0,
+        "archived": false,
+        "fetchedAt": "2026-03-13T09:30:00Z"
+      }
     }
   ]
 }
