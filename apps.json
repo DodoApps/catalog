@@ -1,6 +1,6 @@
 {
-  "schemaVersion": "1.2",
-  "lastUpdated": "2026-02-03T12:00:00Z",
+  "schemaVersion": "2.0",
+  "lastUpdated": "2026-03-13T00:00:00Z",
 
   "publishers": [
     {
@@ -34,6 +34,7 @@
       "id": "dodoshot",
       "name": "DodoShot",
       "publisherId": "dodoapps",
+      "repoSlug": "DodoApps/dodoshot",
       "tagline": "A beautiful screenshot tool for macOS",
       "description": "Lightweight native macOS screenshot application with capture, annotation, and management capabilities. Inspired by CleanShot X, entirely free and open source.",
       "category": "productivity",
@@ -43,11 +44,7 @@
       "screenshots": [
         "https://github.com/user-attachments/assets/a24b9914-0aab-4a03-993a-144069790290"
       ],
-      "version": "1.2.9",
       "minMacOS": "14.0",
-      "downloadUrl": "https://github.com/DodoApps/dodoshot/releases/download/v1.2.9/DodoShot-1.2.9.dmg",
-      "downloadSize": 4072828,
-      "releaseDate": "2026-01-30T11:58:53Z",
       "bundleId": "com.dodoapps.dodoshot",
       "features": [
         "Area, window, fullscreen capture",
@@ -78,6 +75,7 @@
       "id": "dodoclip",
       "name": "DodoClip",
       "publisherId": "dodoapps",
+      "repoSlug": "DodoApps/dodoclip",
       "tagline": "A free clipboard manager for macOS",
       "description": "A lightweight, native clipboard manager that automatically saves everything you copy and provides instant access to your clipboard history.",
       "category": "productivity",
@@ -87,11 +85,7 @@
       "screenshots": [
         "https://github.com/user-attachments/assets/f281b654-a0a2-4883-b09c-21aa2cd3efb4"
       ],
-      "version": "1.2.2",
       "minMacOS": "14.0",
-      "downloadUrl": "https://github.com/DodoApps/dodoclip/releases/download/v1.2.2/DodoClip-1.2.2.dmg",
-      "downloadSize": 4596254,
-      "releaseDate": "2026-01-29T06:27:37Z",
       "bundleId": "com.dodoapps.dodoclip",
       "features": [
         "Clipboard history with search",
@@ -122,6 +116,7 @@
       "id": "dodopulse",
       "name": "DodoPulse",
       "publisherId": "dodoapps",
+      "repoSlug": "DodoApps/dodopulse",
       "tagline": "Real-time system monitoring in your menu bar",
       "description": "A lightweight, native macOS menu bar app that displays real-time system metrics with beautiful mini graphs. Monitor CPU, memory, GPU, network, and more.",
       "category": "utilities",
@@ -131,11 +126,7 @@
       "screenshots": [
         "https://github.com/user-attachments/assets/6868a0ac-1d01-45aa-84d7-8d21dc0daa6b"
       ],
-      "version": "1.1.0",
       "minMacOS": "12.0",
-      "downloadUrl": "https://github.com/DodoApps/dodopulse/releases/download/v1.1.0/DodoPulse-1.1.0.dmg",
-      "downloadSize": 1788784,
-      "releaseDate": "2026-01-27T15:53:21Z",
       "bundleId": "com.dodoapps.dodopulse",
       "features": [
         "CPU, memory, GPU monitoring",
@@ -166,6 +157,7 @@
       "id": "dodotidy",
       "name": "DodoTidy",
       "publisherId": "dodoapps",
+      "repoSlug": "DodoApps/dodotidy",
       "tagline": "A native macOS system cleaner",
       "description": "A native macOS application for system monitoring, disk analysis, and cleanup. Remove caches, logs, and temporary files with multiple safety mechanisms.",
       "category": "utilities",
@@ -173,11 +165,7 @@
       "paidAlternatives": ["CleanMyMac X", "DaisyDisk", "OmniDiskSweeper Pro"],
       "icon": "https://raw.githubusercontent.com/DodoApps/dodotidy/main/dodotidy.png",
       "screenshots": [],
-      "version": "1.0.5",
       "minMacOS": "14.0",
-      "downloadUrl": "https://github.com/DodoApps/dodotidy/releases/download/v1.0.5/DodoTidy-1.0.5.dmg",
-      "downloadSize": 20457824,
-      "releaseDate": "2026-01-29T15:53:53Z",
       "bundleId": "com.dodoapps.dodotidy",
       "features": [
         "Cache and log cleanup",
@@ -208,6 +196,7 @@
       "id": "dodocount",
       "name": "DodoCount",
       "publisherId": "dodoapps",
+      "repoSlug": "DodoApps/dodocount",
       "tagline": "Google Analytics in your menu bar",
       "description": "A beautiful macOS menubar app for Google Analytics 4 and Search Console. Quick access to visitor data and search metrics.",
       "category": "analytics",
@@ -215,11 +204,7 @@
       "paidAlternatives": ["GAget", "Visitors", "Analytiks"],
       "icon": "https://raw.githubusercontent.com/DodoApps/dodocount/main/dodocount.png",
       "screenshots": [],
-      "version": "1.1.0",
       "minMacOS": "14.0",
-      "downloadUrl": "https://github.com/DodoApps/dodocount/releases/download/v1.1.0/DodoCount-1.1.0.dmg",
-      "downloadSize": 1404643,
-      "releaseDate": "2026-01-31T01:10:46Z",
       "bundleId": "com.dodoapps.dodocount",
       "features": [
         "Real-time visitor tracking",
@@ -250,6 +235,7 @@
       "id": "dodonest",
       "name": "DodoNest",
       "publisherId": "dodoapps",
+      "repoSlug": "DodoApps/dodonest",
       "tagline": "Organize your menu bar items",
       "description": "A native macOS application for organizing and rearranging your menu bar items through drag-and-drop functionality and search.",
       "category": "utilities",
@@ -259,11 +245,7 @@
       "screenshots": [
         "https://raw.githubusercontent.com/DodoApps/dodonest/main/assets/screenshot.png"
       ],
-      "version": "1.1.0",
       "minMacOS": "14.0",
-      "downloadUrl": "https://github.com/DodoApps/dodonest/releases/download/v1.1.0/DodoNest-1.1.0.dmg",
-      "downloadSize": 3980641,
-      "releaseDate": "2026-01-28T20:36:37Z",
       "bundleId": "com.dodoapps.dodonest",
       "features": [
         "Visual menu bar layout",
@@ -294,6 +276,7 @@
       "id": "dodopass",
       "name": "DodoPass",
       "publisherId": "dodoapps",
+      "repoSlug": "DodoApps/dodopass",
       "tagline": "Native macOS password manager",
       "description": "A native macOS password manager built with SwiftUI, featuring local AES-256-GCM encryption with optional iCloud sync. Touch ID unlock, auto-lock, and smart clipboard.",
       "category": "security",
@@ -301,11 +284,7 @@
       "paidAlternatives": ["1Password", "Dashlane", "LastPass Premium"],
       "icon": "https://raw.githubusercontent.com/DodoApps/dodopass/main/icon.png",
       "screenshots": [],
-      "version": "1.0.0",
       "minMacOS": "14.0",
-      "downloadUrl": "https://github.com/DodoApps/dodopass/releases/download/v1.0.0/DodoPass-1.0.0.dmg",
-      "downloadSize": 4308534,
-      "releaseDate": "2026-01-31T05:32:58Z",
       "bundleId": "com.dodoapps.dodopass",
       "features": [
         "AES-256-GCM encryption",
@@ -336,6 +315,7 @@
       "id": "macabolic",
       "name": "Macabolic",
       "publisherId": "alinuxpengui",
+      "repoSlug": "alinuxpengui/Macabolic",
       "tagline": "A video and audio downloader for macOS",
       "description": "A beautiful GUI for yt-dlp. Download videos and audio from YouTube and thousands of other supported sites with SponsorBlock, subtitle and playlist support.",
       "category": "media",
@@ -348,11 +328,7 @@
         "https://raw.githubusercontent.com/alinuxpengui/Macabolic/refs/heads/main/Screenshots/ss3.png",
         "https://raw.githubusercontent.com/alinuxpengui/Macabolic/refs/heads/main/Screenshots/ss4.png"
       ],
-      "version": "2.4.1",
       "minMacOS": "12.0",
-      "downloadUrl": "https://github.com/alinuxpengui/Macabolic/releases/latest/download/Macabolic-v2.4.1.dmg",
-      "downloadSize": 3543129,
-      "releaseDate": "2026-01-24T14:14:00Z",
       "bundleId": "com.bytemeowster.macabolic",
       "features": [
         "YouTube, Twitter/X, Instagram and more",
